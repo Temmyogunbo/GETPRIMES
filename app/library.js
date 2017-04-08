@@ -2,9 +2,9 @@
 
 module.exports = {
 
-getPrimes: function(max) {
+getPrimes: function(max){
   if (typeof max === "string"){       //check if argument is a string
-    return "Not a valid argument"
+    return " Not a valid argument ";
   }
   
   else{
@@ -13,7 +13,7 @@ getPrimes: function(max) {
         for (i = 2,l=max; i <= l; ++i) {     
             if (!x[i]) {
                 primes.push(i);             
-                for (j = i << 1,l=max; j <= l; j += i) {
+                for (j = i << 1,l=max; j <= l; j += i){
                     x[j] = true;
                 }
             }
